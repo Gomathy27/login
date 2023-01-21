@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <h1>STUDENT LOGIN FORM</h1>
+        <style>
+            h1{
+                text-align: center;
+            }
+            body{
+                background-color:rgb(250, 249, 215);
+                margin-right: 0px;
+                margin-left: 260px;
+                border: 30px;
+            }
+</style>
+    </head>
+    <script>
+        function fn(){
+            var x=document.getElementById("myip");
+            if(x.type=="password")
+            {
+                x.type="text";
+            }
+            else{
+                x.type="password";
+            
+            }}
+    </script>
+    <body>
+        <form action="log.html" method="post"> 
+
+            <label for="fisrtname">FIRSTNAME</label>
+            <input type="text" id="name" name="fname" placeholder="FNAME"><br><br>
+            <label for="fisrtname">LASTNAME</label>
+            <input type="text" id="name" name="lname" placeholder="LNAME"><br><br>
+            <label for="fisrtname">D.O.B</label>
+            <input type="text" id="name" name="dob" placeholder="DD-MM-YYYY"><br><br>
+            <label for="fisrtname">GENDER</label><br>
+            <input type="radio" name="name" value="name">MALE<br><br>
+            <input type="radio" name="name" value="name">FEMALE<br><br>
+            <label for="fisrtname">AGE</label>
+            <input type="text" id="name" name="fname"><br><br>
+            <label for="fisrtname">CONTACT NO</label>
+            <input type="text" id="name" name="contact"><br><br>
+            <label for="fisrtname">PIN CODE</label>
+            <input type="text" id="name" name="pin"><br><br>
+            <label for="fisrtname">STATE</label>
+            <select name="sr" id="sr">
+            <option value="TAMIL">TAMILNADU</option>
+            <option value="TAMIL">ANDHRA</option>
+            <option value="TAMIL">CANADA</option>
+            <option value="TAMIL">TAMIL</option>
+            </select><br><br>
+            <label for="fisrtname">EMAIL ID</label>
+            <input type="text" id="name" name="contact"><br><br>
+            <label for="fisrtname">PASS WORD</label>
+            <input type="text" id="name" name="contact"><br><br>
+            <label for="fisrtname">HSC MARK</label>
+            <input type="text" id="name" name="contact"><br><br>
+            <label for="fisrtname">SSLC MARK</label>
+            <input type="text" id="name" name="contact"><br><br>
+            
+                <label for="fisrtname">PASS WORD</label>
+            <input type="text" id="name" name="contact"><br><br>
+                <label for="conpasswrd">CONFORM PASSWORD:</label>
+                <input type="password" id="myip" name="fpaswd"> <br></br>
+                <input type="checkbox" onclick="fn()">SHOW PASSWORD<br></br>
+              </table><br>
+              <input type="submit">
+
+        </form>
+    </body>
+</html>
